@@ -2,8 +2,8 @@ var fileHost = "https://pic.liviolet.site/";//你的阿里云地址最后面跟�
 var config = {
    //aliyun OSS config
    uploadImageUrl: `${fileHost}`, // 默认存在根目录，可根据需求改
-   AccessKeySecret: 'brdIe6pURjJdvQvGrVNoxZsBQMdbSc',        // AccessKeySecret 去你的阿里云上控制台上找
-   OSSAccessKeyId: 'LTAI5tQCjczoDyRZCFbuJNU1',         // AccessKeyId 去你的阿里云上控制台上找
+   AccessKeySecret: '自己写',        // AccessKeySecret 去你的阿里云上控制台上找
+   OSSAccessKeyId: '自己写',         // AccessKeyId 去你的阿里云上控制台上找
    timeout: 87600 //这个是上传文件时Policy的失效时间
 };
 module.exports = config
