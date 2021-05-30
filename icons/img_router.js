@@ -1,0 +1,17 @@
+module.exports=[
+  {
+    'imgPath':"../icons/popSci.png"
+  },
+  {
+    'imgPath':"../icons/resue.png"
+  },
+  {
+    'imgPath':'../icons/catPaw.png'
+  },
+  {
+    'imgPath':"../icons/square.png"
+  },
+  {
+    'imgPath':"../icons/user.png"
+  }
+]

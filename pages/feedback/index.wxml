@@ -1,0 +1,25 @@
+<!--pages/square/newActive/new.wxml-->
+<view class="container">
+  <header>
+    <view class="title" bindtap="TabBack">
+      <image src="/icons/back.png" class="icon-back"  style=""></image>
+      握爪
+    </view>
+  </header>
+  <view  class="main" style="height:calc(100vh - {{navBarHeight}}px)">
+    <view class="contain">
+      <p>添加反馈信息</p>
+      <textarea name="" id="" cols="30" rows="10" value="{{user_content}}"
+      placeholder="功能改进、信息纠错、对开发者的建议"
+      bindblur="ChangeValue"
+      ></textarea>
+      <p>你的联系方式</p>
+      <input type="text" placeholder="微信/QQ/电子邮箱" value="{{methodValue}}" bindblur="ChangeMethod"/>
+      <button bindtap="summit">提交</button>
+    </view>
+    <view class="image" bindtap="TabBack">
+    <image src="/icons/cancel.png"></image>
+    <view>关闭</view>
+    </view>
+  </view>
+</view>

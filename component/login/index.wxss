@@ -1,0 +1,64 @@
+/* component/login/index.wxss */
+.container1{
+  position: fixed;
+  /* bottom: -600rpx; */
+  width: calc(100vw - 92rpx);
+  height: 600rpx;
+  background:white;
+  border-radius: 30rpx 30rpx 0rpx 0rpx;
+  border: solid 1rpx #707070;
+  justify-content: center;
+  padding: 0 46rpx;
+  z-index: 1000;
+  transform: translateY(-600rpx);
+  transition: all 3s;
+}
+.header{
+  padding: 56rpx 0 20rpx 0;
+  display: flex;
+  align-items: center;
+}
+.header>.image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.header .span{
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 0 24rpx;
+}
+.h2{
+  display: block;
+  font-size: 36rpx;
+  font-weight: 300;
+  padding:0rpx 0 40rpx 0;
+}
+.contain{
+  display: flex;
+  padding: 15rpx 25rpx;
+  border-top: solid 0.3rpx #707070;
+  border-bottom: solid 0.3rpx #707070;
+}
+.contain>.userImg{
+  padding: 0 30rpx 0 0;
+  width: 96rpx ;
+  height: 96rpx ;
+}
+.button{
+  width:calc(100vw - 80rpx);
+  display: flex;
+  justify-content: space-between !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  bottom: -50rpx;
+}
+.button>.btn1{
+  width: 280rpx;
+  background:rgba(230, 230, 230, 1);
+  color:rgba(7, 193, 96, 1);
+}
+.button>.btn2{
+  width: 280rpx;
+  background: rgba(7, 193, 96, 1);
+  color: white;
+}

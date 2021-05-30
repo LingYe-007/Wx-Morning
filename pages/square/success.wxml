@@ -1,0 +1,14 @@
+<!--pages/square/success.wxml-->
+<view class="container">
+  <header>
+    <view class="title" bindtap="TabBack">
+        <image src="/icons/back.png" class="icon-back" ></image>新建成功！
+      </view>
+  </header>
+  <main>
+    <image src="../../icons/success.png"></image>
+    <text>提交成功</text>
+    <p>现在可以在动态界面查看</p>
+  </main>
+  <button bindtap="navBack" class="button">返回首页</button>
+</view>

@@ -1,0 +1,30 @@
+<!--pages/school.wxml-->
+<view class="head">
+<header back_color="#F4BC72">
+  <view class="title" bindtap="TabBack">
+        <image src="/icons/back.png" class="icon-back" ></image>选择学校
+      </view>
+</header>
+<view class="section">
+    <ul>目前所在学校:</ul>
+    <view class="position"><image src="../icons/position.png"></image>{{school}}</view>
+    <view class="search">
+      <view class="container">
+    <input placeholder="输入学校名称" value="{{search}}" bindblur="ChangeSearch"></input>
+    <image src="/icons/search-item3.png" class="image"></image>
+      </view>
+      <p class="btn" bindtap="search">
+      <p>搜索</p>
+      </p>
+  </view>
+</view>
+</view>
+<scroll-view style="top:calc({{navheight}}px + 240rpx)">
+  <view wx:for="{{schools}}" wx:key="index">
+  <view  
+  class="school" bindtap="chooseSchool" data-index="{{index}}">
+    <image src="{{item.pic}}"></image>
+    <p>{{item.name}}</p>
+  </view>
+</view>
+</scroll-view>

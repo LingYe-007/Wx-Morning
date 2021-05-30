@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "header":"../../component/header/index",
+    "tabbbar":"../../component/tabbar/tabbar"
+  }
+}

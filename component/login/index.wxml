@@ -1,0 +1,19 @@
+<!--component/login/index.wxml-->
+<view>
+<view class="container1" animation="{{animation}}" wx:if="{{showLogin}}">
+<view class="header">
+  <image src="../../icons/contact.png" class="image"></image>
+  <span class="span">握爪</span>
+  <P class="p">申请</P>
+</view>
+<h2 class="h2">获取你的昵称、头像、地区及性别</h2>
+<view class="contain">
+<view class="userImg"><open-data type="userAvatarUrl" ></open-data></view>
+<open-data type="userNickName" class="nickname"></open-data>
+</view>
+<view class="button">
+  <button class="btn1" bindtap="tapOne">取消</button>
+  <button class="btn2" bindtap="tapTwo">允许</button>
+</view>
+</view>
+</view>

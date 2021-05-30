@@ -1,0 +1,31 @@
+<!--pages/popSci/disease/index.wxml-->
+<view>
+  <header>
+      <view class="title" bindtap="TabBack">
+          <image src="/icons/back.png" class="icon-back"></image>
+        疾病</view>
+    </header>
+  <view class="nav-news">
+      <h2>疾病</h2>
+      <view class="swiper" style="height:calc(100vh - 450rpx - {{navheight}}rpx);" data-swiper="{{swiperNumber}}">
+        <!-- <view><image src="{{imageList[index].img_url}}"  style="{{visble[0]}}" mode="scaleToFill"></image></view> -->
+        <view catchtouchstart="catchStart" catchtouchend="catchEnd" mode="aspectFit"  animation="{{animation1}}" data-goal="{{imageList[index+1]}}" style="z-index:{{index0}}" data-current="{{current}}">
+           <image src="{{imageList[current].img_url}}" mode="aspectFill" ></image>
+           <span wx:if="{{showSpan}}">{{imageList[current].name}}</span>
+        </view>
+        <view catchtouchstart="catchStart" catchtouchend="catchEnd1"
+         animation="{{animation}}" style="z-index:{{index1}}" data-current="{{current1}}">
+
+            <image src="{{imageList[current1].img_url}}" mode="aspectFill" 
+           ></image> 
+            <span wx:if="{{!showSpan}}">{{imageList[current1].name}}</span>
+        </view>
+    </view>
+  </view>
+      <tabbar></tabbar>
+      <!-- <swiper circular="true" vertical="true" class="swiper" current="{{current}}">
+      <BLock wx:for="{{swiperData}}">
+          <swiper-item  catchtap="swiperItem" >{{item}}</swiper-item>
+      </BLock>
+      </swiper> -->
+  </view>

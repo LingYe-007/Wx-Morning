@@ -1,0 +1,73 @@
+<!--pages/illusBook/illusContent/index.wxml-->
+<view class="container">
+  <view class="head">
+  <header back_color="#F4BC72">
+    <view class="title" bindtap="TabBack">
+    <image src="/icons/back.png" class="icon-back" ></image>
+      握爪</view>
+    </header>
+    </view>
+    <view class="main">
+      <!-- <image src="{{cat_data.handbook_img_url}}" class="image"></image> -->
+      <swiper autoplay='true' interval="2000" circular="true" class="swiper">
+        <block wx:for="{{swiper_img}}" wx:key="index">
+          <swiper-item>
+            <image src="{{item.img_url}}" mode="aspectFill" data-index="{{index}}"></image>
+          </swiper-item>
+        </block>
+        <!-- <swiper-item wx:for="{{swiper_img}}"><image src="{{swiper_img[i].face_url}}"></image></swiper-item> -->
+      </swiper>
+      <view class="content">
+      <h2>{{cat_data.name}}</h2>
+      <view class="text-content">
+        <view class="trait">毛色</view>
+        <view class="trait">活动场所</view>
+        <view>{{cat_data.fur}}</view>
+        <view>{{cat_data.place}}</view>
+        <view class="trait">健康状态</view>
+        <view class="trait">年龄</view>
+        <view>{{cat_data.health}}</view>
+        <view>{{cat_data.age}}</view>
+        <view class="trait">性格特点 <view>{{cat_data.trait}}</view></view>
+      </view>
+      </view>
+    </view>
+    <view class="footer">
+      <h2>关于ta的动态</h2>
+ <image class="add" src="https://pic.liviolet.site/functions-icon/add.png?x-oss-process=image/quality,q_60" bindtap="newActive"></image>
+ <view class="active" wx:for="{{cat_active}}" wx:key="index">
+        <view class="active-one">
+            <view class="user" class="active-content">
+              <view class="active-1">
+              <image class="user-image-1" src="{{item.face_url}}"></image>
+              <view><view>{{item.nickname}}</view>
+              <p>{{item.dime}}</p></view></view>
+              <view class="content-p"><p>{{item.content}}</p></view>
+              <view class="imgList" data-index="{{index}}" wx:if="{{item.img_url[0]}}">
+                <view class="img-item" wx:for="{{item.img_url}}" wx:key="index1" >
+                  <image src="{{item}}" mode="aspectFill" data-src='{{item}}' bindtap='previewImage' data-index="{{index}}"></image>
+                </view>
+              </view>
+              <view><view class="like-comment">
+                <view class="like" bindtap="like" data-active_id="{{item.active_id}}" data-index="{{index}}"><image src="{{(item.whetherLike==1)?'../../../icons/like1.png':'../../../icons/like.png'}}"></image>{{item.likes_num}}</view>
+                <view class="comment" bindtap="comment" data-active_id="{{item.active_id}}" data-index="{{index}}"><image src="../../../icons/comment.png"></image>{{item.comment_num}}</view>
+              </view></view>
+        </view>
+      </view>
+      <view class="add-comment" wx:if="{{item.showComment}}" wx:key="index">
+              <view class="add-1">
+              <input type="text" placeholder="添加评论.." class="input"
+              bindblur="inputValue" value="{{content}}"></input>
+              <view data-active_id="{{item.active_id}}" class="comt" bindtap="commitValue">评论</view>
+              </view>
+              <view wx:for="{{commentList}}" wx:key="index" class="active-2"> 
+                <view class="active-1">
+                <image class="user-image-1" src="{{item.face_url}}"></image>
+                <view><view>{{item.nickname}}</view>
+                <p>{{item.dime}}</p></view></view>
+                <ul>{{item.content}}</ul>
+              </view>
+      </view>
+    </view>
+</view>
+</view>

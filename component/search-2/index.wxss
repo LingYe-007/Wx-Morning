@@ -1,0 +1,52 @@
+/* component/search-2/index.wxss */
+ .total .image{
+  padding: 0 12rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.input-placeholder{
+  color: rgba(52, 48, 53, 1);
+}
+.total{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search{
+  height: 60rpx;
+  flex-direction: row;
+  display: flex;
+  padding: 0 40rpx;
+  align-items: center;
+  width: calc(100% - 80rpx);
+}
+.container{
+  background: white;
+  border-radius: 16rpx;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(52, 48, 53, 1);
+  font-size: 26rpx;
+}
+.container>.image{
+  width:22rpx;
+  height: 22rpx;
+}
+.btn{
+  box-sizing: border-box;
+  font-size: 26rpx;
+  height: 60rpx;
+  background:#FFFFFF;
+  border-radius: 16rpx;
+  /* padding: 0 24rpx; */
+  text-align: center;
+  word-wrap: nowrap;
+  width: 140rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view>
+<view class="container">
+  <header>
+    <view class="title">
+  <text>握爪</text>
+    </view>
+</header>
+<view class="search">
+  <search class="search"></search>
+</view>
+</view>
+<view class="main-image">  
+  <image src="https://pic.liviolet.site/background/tower.jfif" alt="" bindtap="navMap">
+  </image>
+  <view class="main-text">
+    <image src="/icons/position.png"></image>
+    <text bindtap="ChooseSchool">{{school}}</text>
+  </view>
+</view>
+<!-- 页面主体 -->
+  <view class="main">
+ <view class="main-nav">
+    <view class="nav-item" bindtap="navTo"
+    data-path="{{navPath[0]}}">广场</view>
+    <view class="nav-item" bindtap='navTo' data-path="{{navPath[1]}}">图鉴</view>
+    <view class="nav-item" bindtap="navTo" data-path="{{navPath[2]}}">科普</view>
+ </view>
+ <view class="about-us">
+   <view class="about-title">
+      <image src="/icons/contact.png"></image>
+      <text>关于我们</text>
+   </view>
+   <view class="about-content">
+     <!-- 关于小程序的一些介绍 -->
+     “握爪”是一款基于民大流浪动物管理的小程序，以分享校内小动物的动态为主。希望我们能与它们握爪，友好相处。
+   </view>
+ </view>
+  </view>
+  <!-- 图片导航 -->
+  <view class="contactView" bindtap="navTo_1">
+    <image src="../../icons/cat.png" class="contact"></image>
+    <P>意见反馈</P>
+  </view>
+</view>

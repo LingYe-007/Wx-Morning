@@ -1,0 +1,32 @@
+<!--component/search/search.wxml-->
+<view>
+  <view class="search">
+    <view class="search-0">
+<view class="search-1">
+  <image src="/icons/search-item2.png" class="image" bindtap="screen"></image>
+  <view class="container">
+    <input placeholder="输入与猫咪有关的信息" value="{{search}}" bindblur="ChangeSearch"></input>
+    <image src="/icons/search-item3.png" class="image"></image>
+  </view>
+  <p class="btn" bindtap="Search">
+    <p>搜索</p>
+  </p>
+  </view>
+    <view class="add-list">
+      <view class="add-item" wx:for="{{poverty}}" wx:key="index" >
+      {{item}}<span bindtap="removeTip" data-index="{{index}}">×</span></view>
+    </view>
+  </view>
+    <view class="choose-list" wx:if="{{chooseItem}}">
+        <view class="choose-item" bindtap="chooseTip" data-text="狸花">狸花</view>
+        <view class="choose-item" bindtap="chooseTip" data-text="橘猫">橘猫</view>
+        <view class="choose-item" bindtap="chooseTip" data-text="狸白">狸白</view>
+        <view class="choose-item" bindtap="chooseTip" data-text="毛色">毛色</view>
+        <view class="choose-item" bindtap="chooseTip" data-text="黑猫">黑猫</view>
+        <view class="choose-item" bindtap="chooseTip" data-text="三花">三花</view>
+        <view class="choose-item" bindtap="chooseTip" data-text="奶牛">奶牛</view>
+        <image src="../../icons/Close.png" bindtap="Goback"></image>
+        <view class="bintap" bindtap="Goback"></view>
+    </view>
+  </view>
+</view>

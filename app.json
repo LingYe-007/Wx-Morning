@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/school",
+    "pages/square/square",
+    "pages/map/map",
+    "pages/square/newActive/new",
+    "pages/feedback/index",
+    "pages/feedback/success",
+    "pages/illusBook/illusBook",
+    "pages/square/success",
+    "pages/popSci/popSci",
+    "pages/popSci/Showpage/Showpage",
+    "pages/illusBook/illusContent/index",
+    "pages/popSci/diseases/index",
+    "pages/popSci/resues/index",
+    "pages/popSci/feed/index"
+  ],
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath": "pages/popSci/popSci",
+        "text": "科普"
+      },
+      {
+        "pagePath": "pages/map/map",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/illusBook/illusBook",
+        "text": "图鉴"
+      },
+      {
+        "pagePath": "pages/square/square",
+        "text": "广场"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的信息将被用于小程序位置接口展示"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

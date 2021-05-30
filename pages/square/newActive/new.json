@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "header":"/component/header/index",
+    "tabbar":"/component/tabbar/tabbar",
+    "login":"/component/login/index"
+  }
+}

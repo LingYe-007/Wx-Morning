@@ -1,0 +1,27 @@
+<!--pages/square/newActive/new.wxml-->
+<view class="container">
+  <header>
+    <view class="title" bindtap="TabBack">
+      <image src="/icons/back.png" class="icon-back"  style=""></image>
+      新建动态
+    </view>
+  </header>
+  <view  class="main" style="height:calc(100vh - {{navBarHeight}}px - 34rpx)">
+    <view class="contain">
+        <textarea value="{{user_content}}" name="" id="" cols="30" rows="10" placeholder="今天能看到ta什么新鲜的活动呢.." bindblur="storage_content">
+        </textarea>
+        <view class="position" bindtap="getPosition"><image src="../../../icons/Positioning.png"></image>{{positionText}}</view>
+        <view class="add">点击添加图片</view>
+        <view class="add_img">
+          <view wx:for="{{img_list}}" class="add_img-img" wx:key="index"><image src="{{item}}" mode="aspectFill"></image></view>
+          <view class="add_button" bindtap="chooseImg"><image src="https://pic.liviolet.site/others/add.png"></image></view>
+        </view>
+        <button class="btn3" bindtap="summit_img">提交</button>
+    </view>
+    <view class="image" bindtap="closeTab">
+    <image src="/icons/cancel.png"></image>
+    <view>关闭</view>
+    </view>
+  </view>
+</view>
+<!-- <login showLogin="{{showLogin}}"></login> -->

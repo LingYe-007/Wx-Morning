@@ -1,0 +1,21 @@
+<!--pages/map/map.wxml-->
+<view >
+<view class="map-head">
+<header class="header" back_color="#F4BC72">
+  <view class="title" bindtap="TabBack"><image src="/icons/back.png" class="icon-back" ></image>地图</view>
+</header>
+<search  bindmyevent="myevent"></search>
+</view>
+<map
+ include-points="{{markers}}"
+ wx:if="{{hasmarkers}}"
+ min-scale='14'
+ max-scale='25' 
+ circles="{{circles}}"
+ longitude="{{nowLatitude_y}}" 
+ latitude="{{nowLatitude_x}}" enable-building='true'
+ markers="{{markers}}"
+ bindmarkertap="showLabel"
+  ></map>
+<tabbar></tabbar>      
+</view>

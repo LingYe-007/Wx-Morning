@@ -1,0 +1,32 @@
+/* pages/feedback/success.wxss *//* pages/square/success.wxss */
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 150rpx;
+  text-align: center;
+}
+main>image{
+    margin: 0 auto;
+    width: calc(100vw - 350rpx);
+    height: calc(100vw - 350rpx);
+    padding: 0 0 50rpx 0;
+}
+main>text{
+  color:rgba(112, 112, 112, 1);
+  font-size: 44rpx;
+  padding: 30rpx;
+}
+main>p{
+  font-size:32rpx;
+  padding-bottom: 30rpx;
+}
+.button{
+  background: rgba(250, 185, 35, 1);
+  color: white;
+  font-weight: 400;
+  font-size: 52rpx;
+  padding:20rpx 40rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 6rpx 12rpx #707070;
+}

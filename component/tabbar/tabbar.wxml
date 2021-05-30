@@ -1,0 +1,22 @@
+<!--component/tabbar/tabbar.wxml-->
+<view class="container">
+<view class="nav">
+<view class="tabbar-center tabbar-center{{active?'-item':''}}"  bindtap="navRise">
+   <view wx:for="{{tabbarList}}" class="catdot" wx:key="index">
+      <view wx:if="{{active}}" bindtap="ChangeNav" data-path="{{item.pagePath}}" data-id="{{index}}">
+         <text class="text">{{item.text}}</text></view>
+   </view>
+   <image src='../../icons/catPaw1.png' alt="" class="image"></image>
+</view>
+<!-- <view class="tabbar-button">
+   <view wx:for="{{tabbarList}}" wx:key='{{item.pagePath}}' bindtap="ChangeNav" data-path="{{item.pagePath}}" data-id="{{index}}" >
+   <view  class="tabbar_item_icon" data-id="{{item.id}}">
+   <image src="{{item.pagePath}}"></image>
+   <image class="iconList" src='{{activeID === 
+      index ? item.iconPath:item.iconPath}}'></image>
+   <text class="{{activeID === index ? 'active':'no'}}" data-id="{{item.id}}">{{item.text}}</text>
+</view>
+</view> 
+</view> -->
+</view>
+</view>

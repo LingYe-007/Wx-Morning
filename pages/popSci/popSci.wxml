@@ -1,0 +1,18 @@
+<!--pages/popSci/popSci.wxml-->
+<view class="container">
+    <header>
+      <view class="title" bindtap="TabBack">
+        <image src="/icons/back.png" class="icon-back" ></image>科普
+      </view>
+    </header>
+    
+    <view class="float-ball">
+      <view wx:key="index" class="float-item" wx:for="{{floatList}}" data-path="{{item.pathUrl}}" catchtap="JumpTo">{{item.text}}</view>
+        <!-- <view class="float-item" >疾病</view>
+        <view class="float-item">急救</view>
+        <view class="float-item">查</view>
+        <view class="float-item">绝育</view>
+        <view class="float-item">喂食</view> -->
+    </view>
+    <tabbar></tabbar>
+</view>

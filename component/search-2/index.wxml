@@ -1,0 +1,14 @@
+<!--component/search-2/index.wxml-->
+<view class="total">
+  <view class="search">
+    <view class="container">
+      <!-- <image class="image"src="/icons/search-item1.png" ></image> -->
+    <input placeholder-class="input-placeholder" placeholder="输入与猫咪有关的信息" value="{{search}}" bindblur="ChangeSearch"></input>
+    <image src="/icons/search-item3.png" class="image" ></image>
+    </view>
+  <p class="btn" bindtap="search">
+    <p>搜索</p>
+  </p>
+</view>
+  <!-- <image src="/icons/search-item2.png" class="image" bindtap="screen"></image> -->
+</view>

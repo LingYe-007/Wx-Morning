@@ -1,0 +1,23 @@
+/* pages/map/map.wxss */
+page{
+  overflow: hidden;
+}
+map{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.search{
+  position: fixed;
+  top: 25rpx;
+}
+.header{
+  margin-bottom: 50rpx;
+}
+.map-head{
+  position: relative;
+  /* padding-bottom: 95rpx; */
+  /* z-index: 1; */
+}

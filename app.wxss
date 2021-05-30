@@ -1,0 +1,12 @@
+/**app.wxss**/
+.title{
+  display: flex;
+  flex-direction: row;
+  margin-left: 30rpx;
+ align-items: center;
+}
+.icon-back{
+  margin-right: 15rpx;
+  width: 40rpx;
+  height: 40rpx;
+}

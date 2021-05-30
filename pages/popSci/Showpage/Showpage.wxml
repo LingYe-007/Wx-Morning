@@ -1,0 +1,16 @@
+<!--pages/popSci/Showpage/Showpage.wxml-->
+<view>
+  <header back_color="white"><view class="title" bindtap="TabBack">
+<image src="/icons/back.png" class="icon-back"></image>
+展示页</view></header>
+  <view class="container" catchtouchstart="catchStart" catchtouchend="catchEnd" mode="scaleToFill"  animation="{{animation}}">
+    <image src="{{imgList[index].img_url}}" mode="aspectFill" ></image>
+    <view class="main">
+      <span>{{imgList[index].name}}</span>
+      <p>{{imgList[index].content}}</p>
+    </view>
+  </view>
+  <footer>
+    <view class="footer">左右滑动查看</view>
+  </footer>
+</view>

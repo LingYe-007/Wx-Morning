@@ -1,0 +1,25 @@
+<!--pages/illusBook/illusBook.wxml-->
+<!-- 图鉴页面 -->
+<!-- 引入底部导航栏 -->
+<!-- <tabbar></tabbar> -->
+<view class="container">
+  <view class="header">
+  <header class="nav-content" back_color="#E6E6E6">
+    <view class="title" bindtap="TabBack">
+      <image src="/icons/back.png" class="icon-back" ></image>
+      图鉴</view>
+  </header>
+  </view>
+  <view class="main">
+    <view class="search">
+    <search bindmyevent="myevent"></search>
+    </view>
+    <view class="catList">
+     <view wx:for="{{catData}}" bindtap="storage_cat" data-catid="{{item.cat_id}}" wx:key="index">
+        <image src="{{item.handbook_img_url}}" ></image>
+        <view class="ul">{{item.name}}<image src="{{item.sex===0?Girl:Boy}}"></image></view>
+        <span>{{item.trait}}{{item.catid}}</span>
+     </view>
+     </view>
+    </view>
+  </view>
